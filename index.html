@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de Vistas </title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
+  </head>
+  <body style = "color:#1976D2;
+                 font-family: 'Ubuntu';">
+
+    <script src="libroDeVisitas.js"></script>
+    <h1> Articulos </h1>
+
+    <div id="textoUsuario">
+      <hr>
+      <p style="color:red;
+                font-size:8px;"> Hola Mundo </p>
+      <hr>
+      <p style="color:pink;
+                font-size:20px"> Nueva Historia</p>
+      <hr>
+    </div>
+      <h2>Crea articulo</h2>
+    <div>
+      <button onclick="textoGrande()" type ="button" value="Texto Grande">Texto Grande </button>
+      <button onclick="textoMediano()" type ="button" value="Texto Mediano"> Texto Mediano </button>
+      <button onclick="textoChico()" type ="button" value="Texto Chico"> Texto Chico </button>
+      <button onclick="colorTexto()" type="button" value="Color Texto"> Color de Texto </button>
+      <button onclick="colorFondo()" type="button" value="Color Fondo"> Color de Fondo </button>
+      <button onclick="alinearIzq()" type="button" value="Alinear Izquierda">Alinear Izq </button>
+      <button onclick="alinearCentro()" type="button" value ="Alinear Centro"> Alinear Centro</button>
+      <button onclick="alinearDerecha()" type="button" value="Alinear Derecha"> Alinear Derecha</buton>
+    </div>
+    <div>
+      <textarea id="areaDeTexto" rows="10" cols="109"name="textArea" oninput="mostrarTexto()"></textarea>
+      <hr>
+      <h2>Contenido </h2>
+      <p id ="textoIngresado"></p>
+    </div>
+    <hr>
+    <button onclick="enviarComentario()" type="button" value="Enviar Comentario">Enviar Comentario </button>
+  </body>
+</html>
